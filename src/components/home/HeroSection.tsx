@@ -26,7 +26,7 @@ export function HeroSection() {
             className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/10 border border-white/20 text-white/90 text-sm mb-8 backdrop-blur-sm"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <!-- Principal-Level Software Consulting -->
+            {/* Principal-Level Software Consulting */}
           </motion.div>
 
           {/* Headline */}
