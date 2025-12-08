@@ -35,9 +35,9 @@ const capabilities = [
 
 export function WhyChooseUs() {
   return (
-    <section className="py-24 dark-section topo-pattern relative overflow-hidden">
-      {/* Gradient Overlay */}
-      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-foreground/20" />
+    <section className="py-24 bg-slate-900 topo-pattern relative overflow-hidden">
+      {/* Dark Overlay for better text contrast */}
+      <div className="absolute inset-0 bg-slate-900/80" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid lg:grid-cols-2 gap-16 items-center">
