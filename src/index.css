@@ -7,109 +7,109 @@
 @layer base {
   :root {
     /* TrailGuide DHI Design System */
-    /* Primary: Deep Forest Teal */
-    --primary: 166 84% 31%;
+    /* Primary: Ocean Blue-Green */
+    --primary: 192 70% 35%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 166 72% 45%;
+    --primary-glow: 180 55% 45%;
     
-    /* Background: Warm Slate */
-    --background: 222 25% 97%;
-    --foreground: 222 47% 11%;
+    /* Background: Cool Gray */
+    --background: 210 20% 98%;
+    --foreground: 215 25% 15%;
     
     /* Cards: Clean White */
     --card: 0 0% 100%;
-    --card-foreground: 222 47% 11%;
+    --card-foreground: 215 25% 15%;
     
     /* Popover */
     --popover: 0 0% 100%;
-    --popover-foreground: 222 47% 11%;
+    --popover-foreground: 215 25% 15%;
     
-    /* Secondary: Cool Gray */
-    --secondary: 220 14% 96%;
-    --secondary-foreground: 222 47% 11%;
+    /* Secondary: Steel Blue-Gray */
+    --secondary: 210 15% 94%;
+    --secondary-foreground: 215 25% 15%;
     
-    /* Muted: Soft Gray */
-    --muted: 220 14% 96%;
-    --muted-foreground: 220 9% 46%;
+    /* Muted: Slate Gray */
+    --muted: 210 15% 94%;
+    --muted-foreground: 215 15% 45%;
     
-    /* Accent: Lighter Teal */
-    --accent: 166 64% 94%;
-    --accent-foreground: 166 84% 25%;
+    /* Accent: Soft Teal-Blue */
+    --accent: 185 45% 92%;
+    --accent-foreground: 192 70% 28%;
     
     /* Destructive */
     --destructive: 0 84% 60%;
     --destructive-foreground: 0 0% 100%;
     
     /* Borders */
-    --border: 220 13% 91%;
-    --input: 220 13% 91%;
-    --ring: 166 84% 31%;
+    --border: 210 15% 88%;
+    --input: 210 15% 88%;
+    --ring: 192 70% 35%;
     
     /* Radius */
     --radius: 0.75rem;
     
     /* Custom Design Tokens */
-    --gradient-hero: linear-gradient(135deg, hsl(222, 47%, 8%) 0%, hsl(222, 35%, 15%) 50%, hsl(200, 25%, 20%) 100%);
-    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(220, 14%, 99%) 100%);
-    --gradient-teal: linear-gradient(135deg, hsl(166, 84%, 31%) 0%, hsl(175, 77%, 26%) 100%);
-    --gradient-dark-section: linear-gradient(180deg, hsl(222, 47%, 8%) 0%, hsl(222, 35%, 12%) 100%);
+    --gradient-hero: linear-gradient(135deg, hsl(210, 35%, 12%) 0%, hsl(200, 30%, 18%) 50%, hsl(185, 25%, 22%) 100%);
+    --gradient-card: linear-gradient(180deg, hsl(0, 0%, 100%) 0%, hsl(210, 15%, 99%) 100%);
+    --gradient-teal: linear-gradient(135deg, hsl(192, 70%, 35%) 0%, hsl(175, 60%, 32%) 100%);
+    --gradient-dark-section: linear-gradient(180deg, hsl(210, 35%, 12%) 0%, hsl(200, 30%, 16%) 100%);
     
-    --shadow-soft: 0 4px 24px -4px hsl(222 47% 11% / 0.08);
-    --shadow-card: 0 8px 32px -8px hsl(222 47% 11% / 0.1);
-    --shadow-elevated: 0 16px 48px -12px hsl(222 47% 11% / 0.15);
-    --shadow-glow: 0 0 40px hsl(166 84% 31% / 0.2);
+    --shadow-soft: 0 4px 24px -4px hsl(215 25% 15% / 0.08);
+    --shadow-card: 0 8px 32px -8px hsl(215 25% 15% / 0.1);
+    --shadow-elevated: 0 16px 48px -12px hsl(215 25% 15% / 0.15);
+    --shadow-glow: 0 0 40px hsl(192 70% 35% / 0.2);
     
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
     
-    /* Sidebar (keeping defaults) */
+    /* Sidebar */
     --sidebar-background: 0 0% 98%;
-    --sidebar-foreground: 240 5.3% 26.1%;
-    --sidebar-primary: 240 5.9% 10%;
-    --sidebar-primary-foreground: 0 0% 98%;
-    --sidebar-accent: 240 4.8% 95.9%;
-    --sidebar-accent-foreground: 240 5.9% 10%;
-    --sidebar-border: 220 13% 91%;
-    --sidebar-ring: 166 84% 31%;
+    --sidebar-foreground: 215 20% 30%;
+    --sidebar-primary: 192 70% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 210 15% 95%;
+    --sidebar-accent-foreground: 215 25% 15%;
+    --sidebar-border: 210 15% 88%;
+    --sidebar-ring: 192 70% 35%;
   }
 
   .dark {
-    --primary: 166 72% 45%;
-    --primary-foreground: 222 47% 8%;
+    --primary: 185 60% 50%;
+    --primary-foreground: 210 35% 10%;
     
-    --background: 222 47% 8%;
-    --foreground: 210 40% 98%;
+    --background: 210 35% 10%;
+    --foreground: 210 30% 96%;
     
-    --card: 222 35% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 30% 14%;
+    --card-foreground: 210 30% 96%;
     
-    --popover: 222 35% 12%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 30% 14%;
+    --popover-foreground: 210 30% 96%;
     
-    --secondary: 222 30% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25% 18%;
+    --secondary-foreground: 210 30% 96%;
     
-    --muted: 222 30% 18%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 25% 18%;
+    --muted-foreground: 210 20% 60%;
     
-    --accent: 166 50% 15%;
-    --accent-foreground: 166 72% 60%;
+    --accent: 185 40% 18%;
+    --accent-foreground: 185 55% 65%;
     
     --destructive: 0 62% 30%;
-    --destructive-foreground: 210 40% 98%;
+    --destructive-foreground: 210 30% 96%;
     
-    --border: 222 30% 20%;
-    --input: 222 30% 20%;
-    --ring: 166 72% 45%;
+    --border: 210 25% 22%;
+    --input: 210 25% 22%;
+    --ring: 185 60% 50%;
     
-    --sidebar-background: 222 47% 8%;
-    --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 166 72% 45%;
+    --sidebar-background: 210 35% 10%;
+    --sidebar-foreground: 210 25% 90%;
+    --sidebar-primary: 185 60% 50%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 222 30% 15%;
-    --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 222 30% 20%;
-    --sidebar-ring: 166 72% 45%;
+    --sidebar-accent: 210 25% 16%;
+    --sidebar-accent-foreground: 210 25% 90%;
+    --sidebar-border: 210 25% 22%;
+    --sidebar-ring: 185 60% 50%;
   }
 }
 
@@ -175,7 +175,7 @@
   
   /* Path/Trail Pattern */
   .trail-pattern {
-    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 25, 50 50 T 100 50' stroke='%2314b8a6' stroke-width='0.5' fill='none' opacity='0.1'/%3E%3Cpath d='M0 70 Q 25 45, 50 70 T 100 70' stroke='%2314b8a6' stroke-width='0.5' fill='none' opacity='0.08'/%3E%3Cpath d='M0 30 Q 25 5, 50 30 T 100 30' stroke='%2314b8a6' stroke-width='0.5' fill='none' opacity='0.06'/%3E%3C/svg%3E");
+    background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 50 Q 25 25, 50 50 T 100 50' stroke='%230891b2' stroke-width='0.5' fill='none' opacity='0.1'/%3E%3Cpath d='M0 70 Q 25 45, 50 70 T 100 70' stroke='%230891b2' stroke-width='0.5' fill='none' opacity='0.08'/%3E%3Cpath d='M0 30 Q 25 5, 50 30 T 100 30' stroke='%230891b2' stroke-width='0.5' fill='none' opacity='0.06'/%3E%3C/svg%3E");
   }
 }
 
