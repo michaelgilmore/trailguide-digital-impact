@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 
 export function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center hero-gradient topo-pattern overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-accent/30 to-background topo-pattern overflow-hidden">
       {/* Animated Background Elements */}
       <div className="absolute inset-0 overflow-hidden">
         <motion.div 
@@ -29,10 +29,10 @@ export function HeroSection() {
       </div>
 
       {/* Trail/Path SVG Decoration */}
-      <svg className="absolute inset-0 w-full h-full opacity-[0.03]" xmlns="http://www.w3.org/2000/svg">
+      <svg className="absolute inset-0 w-full h-full opacity-[0.15]" xmlns="http://www.w3.org/2000/svg">
         <defs>
           <pattern id="trail-grid" width="40" height="40" patternUnits="userSpaceOnUse">
-            <circle cx="20" cy="20" r="1" fill="currentColor" className="text-primary-foreground" />
+            <circle cx="20" cy="20" r="1" fill="currentColor" className="text-primary" />
           </pattern>
         </defs>
         <rect width="100%" height="100%" fill="url(#trail-grid)" />
@@ -45,7 +45,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary-foreground/10 border border-primary-foreground/20 text-primary-foreground/80 text-sm mb-8"
+            className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 text-foreground/80 text-sm mb-8"
           >
             <span className="w-2 h-2 rounded-full bg-primary animate-pulse" />
             Principal-Level Software Consulting
@@ -56,7 +56,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-primary-foreground mb-6 leading-tight"
+            className="font-display text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold text-foreground mb-6 leading-tight"
           >
             TrailGuide
             <br />
@@ -68,7 +68,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="text-xl sm:text-2xl text-primary-foreground/80 mb-8 font-light"
+            className="text-xl sm:text-2xl text-foreground/80 mb-8 font-light"
           >
             Accelerating Your Path from Code to Patient Impact
           </motion.p>
@@ -78,7 +78,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-lg text-primary-foreground/60 mb-10 max-w-2xl mx-auto"
+            className="text-lg text-muted-foreground mb-10 max-w-2xl mx-auto"
           >
             With 20+ years of principal-level engineering experience, we combine deep technical expertise with regulatory knowledge to build systems that work—whether you're navigating FDA compliance, managing complex data pipelines, or scaling cloud infrastructure.
           </motion.p>
@@ -108,7 +108,7 @@ export function HeroSection() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.5 }}
-            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-primary-foreground/10"
+            className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-border"
           >
             {[
               { value: "20+", label: "Years Experience" },
@@ -120,7 +120,7 @@ export function HeroSection() {
                 <div className="font-display text-3xl sm:text-4xl font-bold text-primary mb-1">
                   {stat.value}
                 </div>
-                <div className="text-primary-foreground/60 text-sm">{stat.label}</div>
+                <div className="text-muted-foreground text-sm">{stat.label}</div>
               </div>
             ))}
           </motion.div>
@@ -136,7 +136,7 @@ export function HeroSection() {
           <motion.div
             animate={{ y: [0, 8, 0] }}
             transition={{ duration: 1.5, repeat: Infinity }}
-            className="text-primary-foreground/40"
+            className="text-muted-foreground"
           >
             <ChevronDown className="w-6 h-6" />
           </motion.div>
