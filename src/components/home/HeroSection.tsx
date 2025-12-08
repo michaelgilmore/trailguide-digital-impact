@@ -8,17 +8,17 @@ export function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Hero Background Image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: `url(${heroTrail})` }}
       />
-      
+
       {/* Dark Overlay for Text Readability */}
       <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
 
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
-          {/* Badge */
+          {/* Badge *
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
@@ -29,7 +29,7 @@ export function HeroSection() {
             Principal-Level Software Consulting
           </motion.div>
           */}
-          
+
           {/* Headline */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
@@ -59,7 +59,9 @@ export function HeroSection() {
             transition={{ duration: 0.6, delay: 0.3 }}
             className="text-lg text-white/70 mb-10 max-w-2xl mx-auto"
           >
-            With 20+ years of principal-level engineering experience, we combine deep technical expertise with regulatory knowledge to build systems that work—whether you're navigating FDA compliance, managing complex data pipelines, or scaling cloud infrastructure.
+            With 20+ years of principal-level engineering experience, we combine deep technical expertise with
+            regulatory knowledge to build systems that work—whether you're navigating FDA compliance, managing complex
+            data pipelines, or scaling cloud infrastructure.
           </motion.p>
 
           {/* CTAs */}
@@ -96,9 +98,7 @@ export function HeroSection() {
               { value: "100%", label: "Quality Focus" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
-                <div className="font-display text-3xl sm:text-4xl font-bold text-primary mb-1">
-                  {stat.value}
-                </div>
+                <div className="font-display text-3xl sm:text-4xl font-bold text-primary mb-1">{stat.value}</div>
                 <div className="text-white/60 text-sm">{stat.label}</div>
               </div>
             ))}
