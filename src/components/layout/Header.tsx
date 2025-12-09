@@ -40,23 +40,21 @@ export function Header() {
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center group-hover:shadow-glow transition-shadow duration-300">
               <svg viewBox="0 0 24 24" className="w-6 h-6 text-primary-foreground" fill="currentColor" stroke="none">
-                {/* Cairn pyramid - many rocks at base, single at top */}
+                {/* Cairn pyramid - 4, 3, 2, 1 rocks */}
                 {/* Bottom row - 4 rocks */}
-                <ellipse cx="5" cy="21" rx="3" ry="1.5" opacity="0.95" />
-                <ellipse cx="10" cy="21.5" rx="2.5" ry="1.3" opacity="0.9" />
-                <ellipse cx="14.5" cy="21" rx="2.8" ry="1.4" opacity="0.92" />
-                <ellipse cx="19.5" cy="21.5" rx="2.5" ry="1.3" opacity="0.88" />
+                <ellipse cx="4.5" cy="20.5" rx="2.5" ry="1.5" />
+                <ellipse cx="9.5" cy="20.5" rx="2.5" ry="1.5" />
+                <ellipse cx="14.5" cy="20.5" rx="2.5" ry="1.5" />
+                <ellipse cx="19.5" cy="20.5" rx="2.5" ry="1.5" />
                 {/* Second row - 3 rocks */}
-                <ellipse cx="7" cy="17.5" rx="3" ry="1.8" opacity="0.88" />
-                <ellipse cx="12" cy="18" rx="2.5" ry="1.5" opacity="0.85" />
-                <ellipse cx="17" cy="17.5" rx="2.8" ry="1.6" opacity="0.87" />
+                <ellipse cx="7" cy="16" rx="2.5" ry="1.5" />
+                <ellipse cx="12" cy="16" rx="2.5" ry="1.5" />
+                <ellipse cx="17" cy="16" rx="2.5" ry="1.5" />
                 {/* Third row - 2 rocks */}
-                <ellipse cx="9.5" cy="14" rx="2.8" ry="1.7" opacity="0.82" />
-                <ellipse cx="14.5" cy="14.5" rx="2.5" ry="1.5" opacity="0.8" />
-                {/* Fourth row - 1 rock */}
-                <ellipse cx="12" cy="10.5" rx="2.5" ry="1.6" opacity="0.75" />
-                {/* Top - single rock */}
-                <ellipse cx="12" cy="7" rx="2" ry="1.3" opacity="0.7" />
+                <ellipse cx="9.5" cy="11.5" rx="2.5" ry="1.5" />
+                <ellipse cx="14.5" cy="11.5" rx="2.5" ry="1.5" />
+                {/* Top - 1 rock */}
+                <ellipse cx="12" cy="7" rx="2.5" ry="1.5" />
               </svg>
             </div>
             <div className={`font-display font-bold text-lg lg:text-xl transition-colors ${logoColor}`}>
