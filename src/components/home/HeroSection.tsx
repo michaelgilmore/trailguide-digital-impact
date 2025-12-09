@@ -10,7 +10,7 @@ function AnimatedPulse() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPulse(prev => {
+      setPulse((prev) => {
         const change = Math.random() * 6 - 2;
         const newPulse = prev + change;
         return Math.max(110, Math.min(145, Math.round(newPulse)));
@@ -47,8 +47,8 @@ function AnimatedCalories() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCalories(prev => prev + Math.floor(Math.random() * 3) + 1);
-    }, 800);
+      setCalories((prev) => prev + Math.floor(Math.random() * 3) + 1);
+    }, 3000);
     return () => clearInterval(interval);
   }, []);
 
@@ -79,7 +79,7 @@ function AnimatedPace() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setPace(prev => {
+      setPace((prev) => {
         const change = (Math.random() - 0.5) * 1.5;
         const newPace = prev + change;
         return Math.max(16, Math.min(22, Number(newPace.toFixed(1))));
@@ -114,8 +114,8 @@ function AnimatedSteps() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setSteps(prev => prev + Math.floor(Math.random() * 3) + 2);
-      setLeftStep(prev => !prev);
+      setSteps((prev) => prev + Math.floor(Math.random() * 3) + 2);
+      setLeftStep((prev) => !prev);
     }, 600);
     return () => clearInterval(interval);
   }, []);
