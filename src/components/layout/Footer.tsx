@@ -29,7 +29,13 @@ export function Footer() {
           <div className="lg:col-span-1">
             <Link to="/" className="flex items-center gap-2 mb-4">
               <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center">
-                <svg viewBox="0 0 24 24" className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" strokeWidth="2">
+                <svg
+                  viewBox="0 0 24 24"
+                  className="w-6 h-6 text-primary-foreground"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                >
                   <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
                 </svg>
               </div>
@@ -39,18 +45,19 @@ export function Footer() {
               </div>
             </Link>
             <p className="text-primary-foreground/70 text-sm mb-6 max-w-xs">
-              Accelerating your path from code to patient impact with 20+ years of principal-level engineering expertise.
+              Accelerating your path from code to patient impact with 20+ years of principal-level engineering
+              expertise.
             </p>
             <div className="flex items-center gap-4">
-              <a 
-                href="https://linkedin.com" 
-                target="_blank" 
+              <a
+                href="https://linkedin.com"
+                target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
                 <Linkedin className="w-5 h-5" />
               </a>
-              <a 
+              <a
                 href="mailto:contact@trailguidedhi.com"
                 className="w-10 h-10 rounded-lg bg-primary-foreground/10 flex items-center justify-center hover:bg-primary hover:text-primary-foreground transition-colors"
               >
@@ -65,7 +72,7 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.services.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     to={link.href}
                     className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
                   >
@@ -82,7 +89,7 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <Link 
+                  <Link
                     to={link.href}
                     className="text-primary-foreground/70 hover:text-primary transition-colors text-sm"
                   >
@@ -99,7 +106,7 @@ export function Footer() {
             <div className="space-y-3">
               <div className="flex items-start gap-3 text-sm text-primary-foreground/70">
                 <MapPin className="w-4 h-4 mt-0.5 flex-shrink-0" />
-                <span>Greater Boston Area<br />Chelmsford, MA</span>
+                <span>Greater Boston Area</span>
               </div>
               <div className="flex items-center gap-3 text-sm text-primary-foreground/70">
                 <Mail className="w-4 h-4 flex-shrink-0" />
@@ -118,7 +125,7 @@ export function Footer() {
           </p>
           <div className="flex items-center gap-6">
             {footerLinks.resources.map((link) => (
-              <Link 
+              <Link
                 key={link.name}
                 to={link.href}
                 className="text-primary-foreground/50 hover:text-primary transition-colors text-sm"
