@@ -39,8 +39,13 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center group-hover:shadow-glow transition-shadow duration-300">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 text-primary-foreground" fill="none" stroke="currentColor" strokeWidth="2">
-                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
+              <svg viewBox="0 0 24 24" className="w-6 h-6 text-primary-foreground" fill="currentColor" stroke="none">
+                {/* Cairn - stacked rocks */}
+                <ellipse cx="12" cy="20" rx="5" ry="2" opacity="0.9" />
+                <ellipse cx="12" cy="15" rx="4" ry="2.5" opacity="0.85" />
+                <ellipse cx="12" cy="10.5" rx="3" ry="2" opacity="0.8" />
+                <ellipse cx="12" cy="7" rx="2" ry="1.5" opacity="0.75" />
+                <circle cx="12" cy="4" r="1.5" opacity="0.7" />
               </svg>
             </div>
             <div className={`font-display font-bold text-lg lg:text-xl transition-colors ${logoColor}`}>
