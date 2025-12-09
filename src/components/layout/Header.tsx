@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Menu, X, LogIn } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
+import { CairnLogo } from "@/components/CairnLogo";
 
 const navLinks = [
   { name: "Services", href: "/services" },
@@ -38,23 +39,7 @@ export function Header() {
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 group">
             <div className="w-10 h-10 rounded-lg bg-primary flex items-center justify-center group-hover:shadow-glow transition-shadow duration-300">
-              <svg viewBox="0 0 24 24" className="w-6 h-6 text-primary-foreground" fill="currentColor" stroke="none">
-                {/* Cairn pyramid - 4, 3, 2, 1 rocks */}
-                {/* Bottom row - 4 rocks */}
-                <ellipse cx="4.5" cy="18.5" rx="2.5" ry="2" />
-                <ellipse cx="9.5" cy="18.5" rx="2.5" ry="2" />
-                <ellipse cx="14.5" cy="18.5" rx="2.5" ry="2" />
-                <ellipse cx="19.5" cy="18.5" rx="2.5" ry="2" />
-                {/* Second row - 3 rocks */}
-                <ellipse cx="7" cy="14" rx="2.5" ry="2" />
-                <ellipse cx="12" cy="14" rx="2.5" ry="2" />
-                <ellipse cx="17" cy="14" rx="2.5" ry="2" />
-                {/* Third row - 2 rocks */}
-                <ellipse cx="9.5" cy="9.5" rx="2.5" ry="2" />
-                <ellipse cx="14.5" cy="9.5" rx="2.5" ry="2" />
-                {/* Top - 1 rock */}
-                <ellipse cx="12" cy="5" rx="2.5" ry="2" />
-              </svg>
+              <CairnLogo className="w-6 h-6 text-primary-foreground" />
             </div>
             <div className={`font-display font-bold text-lg lg:text-xl transition-colors ${logoColor}`}>
               <span>TrailGuide</span>
