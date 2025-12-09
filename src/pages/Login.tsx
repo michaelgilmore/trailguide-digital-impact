@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Lock, Mail, ArrowRight } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
+import { CairnLogo } from "@/components/CairnLogo";
 
 export default function Login() {
   const { toast } = useToast();
@@ -40,9 +41,7 @@ export default function Login() {
             >
               {/* Logo */}
               <div className="w-16 h-16 rounded-2xl bg-primary flex items-center justify-center mx-auto mb-6">
-                <svg viewBox="0 0 24 24" className="w-8 h-8 text-primary-foreground" fill="none" stroke="currentColor" strokeWidth="2">
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                </svg>
+                <CairnLogo className="w-10 h-10 text-primary-foreground" />
               </div>
               <h1 className="font-display text-3xl font-bold text-foreground mb-2">
                 Client Portal
