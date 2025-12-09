@@ -46,14 +46,14 @@ export function Header() {
                 <ellipse cx="14.5" cy="20.5" rx="2.5" ry="2" />
                 <ellipse cx="19.5" cy="20.5" rx="2.5" ry="2" />
                 {/* Second row - 3 rocks */}
-                <ellipse cx="7" cy="16" rx="2.5" ry="1.5" />
-                <ellipse cx="12" cy="16" rx="2.5" ry="1.5" />
-                <ellipse cx="17" cy="16" rx="2.5" ry="1.5" />
+                <ellipse cx="7" cy="16" rx="2.5" ry="2" />
+                <ellipse cx="12" cy="16" rx="2.5" ry="2" />
+                <ellipse cx="17" cy="16" rx="2.5" ry="2" />
                 {/* Third row - 2 rocks */}
-                <ellipse cx="9.5" cy="11.5" rx="2.5" ry="1.5" />
-                <ellipse cx="14.5" cy="11.5" rx="2.5" ry="1.5" />
+                <ellipse cx="9.5" cy="11.5" rx="2.5" ry="2" />
+                <ellipse cx="14.5" cy="11.5" rx="2.5" ry="2" />
                 {/* Top - 1 rock */}
-                <ellipse cx="12" cy="7" rx="2.5" ry="1.5" />
+                <ellipse cx="12" cy="7" rx="2.5" ry="2" />
               </svg>
             </div>
             <div className={`font-display font-bold text-lg lg:text-xl transition-colors ${logoColor}`}>
