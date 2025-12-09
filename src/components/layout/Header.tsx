@@ -25,9 +25,8 @@ export function Header() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  const headerBg = isScrolled || !isHeroPage
-    ? "bg-card/95 backdrop-blur-md shadow-soft border-b border-border"
-    : "bg-transparent";
+  const headerBg =
+    isScrolled || !isHeroPage ? "bg-card/95 backdrop-blur-md shadow-soft border-b border-border" : "bg-transparent";
 
   const textColor = isScrolled || !isHeroPage ? "text-foreground" : "text-primary-foreground";
   const logoColor = isScrolled || !isHeroPage ? "text-foreground" : "text-primary-foreground";
@@ -42,10 +41,10 @@ export function Header() {
               <svg viewBox="0 0 24 24" className="w-6 h-6 text-primary-foreground" fill="currentColor" stroke="none">
                 {/* Cairn pyramid - 4, 3, 2, 1 rocks */}
                 {/* Bottom row - 4 rocks */}
-                <ellipse cx="4.5" cy="20.5" rx="2.5" ry="1.5" />
-                <ellipse cx="9.5" cy="20.5" rx="2.5" ry="1.5" />
-                <ellipse cx="14.5" cy="20.5" rx="2.5" ry="1.5" />
-                <ellipse cx="19.5" cy="20.5" rx="2.5" ry="1.5" />
+                <ellipse cx="4.5" cy="20.5" rx="2.5" ry="2" />
+                <ellipse cx="9.5" cy="20.5" rx="2.5" ry="2" />
+                <ellipse cx="14.5" cy="20.5" rx="2.5" ry="2" />
+                <ellipse cx="19.5" cy="20.5" rx="2.5" ry="2" />
                 {/* Second row - 3 rocks */}
                 <ellipse cx="7" cy="16" rx="2.5" ry="1.5" />
                 <ellipse cx="12" cy="16" rx="2.5" ry="1.5" />
@@ -67,7 +66,7 @@ export function Header() {
           <nav className="hidden lg:flex items-center gap-1">
             {navLinks.map((link) => (
               <Link key={link.name} to={link.href}>
-                <Button 
+                <Button
                   variant={isScrolled || !isHeroPage ? "nav" : "navHero"}
                   className={location.pathname === link.href ? "text-primary" : ""}
                 >
@@ -115,8 +114,8 @@ export function Header() {
             <div className="container mx-auto px-4 py-4">
               <nav className="flex flex-col gap-2">
                 {navLinks.map((link) => (
-                  <Link 
-                    key={link.name} 
+                  <Link
+                    key={link.name}
                     to={link.href}
                     onClick={() => setIsOpen(false)}
                     className={`py-3 px-4 rounded-lg font-medium transition-colors hover:bg-accent ${
