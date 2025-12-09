@@ -227,9 +227,9 @@ export function HeroSection() {
             className="grid grid-cols-2 md:grid-cols-4 gap-8 mt-16 pt-16 border-t border-white/20"
           >
             <AnimatedPulse />
-            <AnimatedCalories />
             <AnimatedPace />
             <AnimatedSteps />
+            <AnimatedCalories />
           </motion.div>
         </div>
 
