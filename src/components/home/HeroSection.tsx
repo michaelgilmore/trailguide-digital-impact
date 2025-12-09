@@ -93,8 +93,8 @@ export function HeroSection() {
           >
             {[
               { value: "20+", label: "Years Experience" },
-              { value: "FDA", label: "Compliance Ready" },
-              { value: "IEC 62304", label: "Certified Processes" },
+              { value: "FDA", label: "Submission Ready" },
+              { value: "IEC 62304", label: "Compliant Processes" },
               { value: "100%", label: "Quality Focus" },
             ].map((stat, index) => (
               <div key={index} className="text-center">
