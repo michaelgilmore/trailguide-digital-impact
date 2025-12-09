@@ -47,7 +47,7 @@ function AnimatedCalories() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setCalories((prev) => prev + Math.floor(Math.random() * 2) + 1);
+      setCalories((prev) => prev + 1);
     }, 3000);
     return () => clearInterval(interval);
   }, []);
@@ -116,7 +116,7 @@ function AnimatedSteps() {
     const interval = setInterval(() => {
       setSteps((prev) => prev + Math.floor(Math.random() * 2) + 1);
       setLeftStep((prev) => !prev);
-    }, 600);
+    }, 1000);
     return () => clearInterval(interval);
   }, []);
 
