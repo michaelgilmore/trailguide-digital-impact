@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { ShieldCheck, ArrowRight, BrainCircuit, Cloud } from "lucide-react";
+import { ShieldCheck, ArrowRight, BrainCircuit, Cloud, FileText } from "lucide-react";
 
 export const tools = [
+  {
+    href: "/tools/templates",
+    icon: FileText,
+    title: "Template Library",
+    description: "Editable starting points for software planning, traceability, AI evaluation, and cloud reviews.",
+  },
   {
     href: "/tools/hipaa-cloud-checklist",
     icon: Cloud,
