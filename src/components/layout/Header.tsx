@@ -8,6 +8,7 @@ import { CairnLogo } from "@/components/CairnLogo";
 const navLinks = [
   { name: "Services", href: "/services" },
   { name: "About", href: "/about" },
+  { name: "Tools", href: "/tools" },
   { name: "Blog", href: "/blog" },
   { name: "Contact", href: "/contact" },
 ];
