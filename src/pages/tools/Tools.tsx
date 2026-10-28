@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { ShieldCheck, ArrowRight, BrainCircuit } from "lucide-react";
+import { ShieldCheck, ArrowRight, BrainCircuit, Cloud } from "lucide-react";
 
 export const tools = [
+  {
+    href: "/tools/hipaa-cloud-checklist",
+    icon: Cloud,
+    title: "HIPAA Cloud Checklist",
+    description: "Review your cloud safeguards and supporting evidence, with a downloadable PDF checklist.",
+  },
   {
     href: "/tools/ai-ml-readiness",
     icon: BrainCircuit,

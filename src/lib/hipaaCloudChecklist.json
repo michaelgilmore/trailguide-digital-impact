@@ -1,0 +1,48 @@
+{
+  "title": "HIPAA Cloud Checklist",
+  "version": "October 2026",
+  "disclaimer": "Educational planning aid, not legal advice, a complete HIPAA audit, or a compliance certification. Confirm applicability and current requirements with qualified privacy and security advisors. Completing this checklist does not establish compliance.",
+  "sections": [
+    {
+      "id": "scope", "title": "Scope & shared responsibility",
+      "items": [
+        {"id": "applicability", "title": "Determine your HIPAA role", "detail": "Document whether you are a covered entity, business associate, or subcontractor and identify the services that create, receive, maintain, or transmit electronic protected health information (ePHI).", "evidence": "Role assessment and system inventory"},
+        {"id": "data-flows", "title": "Map every ePHI data flow", "detail": "Include storage, backups, logs, analytics, support tools, AI vendors, locations, and downstream providers. Limit collection and access to what is needed for the purpose.", "evidence": "Data-flow diagram and retention inventory"},
+        {"id": "baa", "title": "Execute appropriate business associate agreements", "detail": "Execute a BAA before a cloud provider handles ePHI on your behalf. A provider that maintains encrypted ePHI can still be a business associate even when it cannot decrypt the data. Review downstream obligations and permitted uses.", "evidence": "Signed BAAs and vendor register"},
+        {"id": "responsibility", "title": "Assign cloud and customer responsibilities", "detail": "Confirm which services are covered by your agreements and who owns configuration, access, monitoring, backups, incident response, and data return or deletion. A vendor's marketing claim is not proof of your compliance.", "evidence": "Responsibility matrix and reviewed service terms"}
+      ]
+    },
+    {
+      "id": "safeguards", "title": "Risk analysis & safeguards",
+      "items": [
+        {"id": "risk-analysis", "title": "Perform an organization-specific risk analysis", "detail": "Evaluate threats and vulnerabilities to the confidentiality, integrity, and availability of all ePHI. Document likelihood, impact, risk decisions, accountable owners, and remediation; revisit as conditions change.", "evidence": "Risk analysis and risk treatment register"},
+        {"id": "identity", "title": "Control and review access", "detail": "Use unique user identities, appropriate role-based access, timely deprovisioning, and periodic access reviews. Evaluate strong authentication, including MFA, based on risk; protect privileged and emergency access.", "evidence": "Access policy, access reviews, and authentication settings"},
+        {"id": "encryption", "title": "Evaluate encryption and key management", "detail": "Assess encryption for ePHI at rest and in transit and document key ownership, rotation, recovery, and access. Under the current Security Rule, addressable specifications are not simply optional: assess reasonableness and appropriateness and document required decisions and alternatives.", "evidence": "Encryption assessment and key-management procedures"},
+        {"id": "hardening", "title": "Protect system integrity and cloud configuration", "detail": "Restrict public exposure, harden workloads, manage secrets, address vulnerabilities, and control changes. Include physical safeguards and facility responsibilities in your cloud-provider assessment.", "evidence": "Configuration baselines, vulnerability records, and change approvals"}
+      ]
+    },
+    {
+      "id": "operations", "title": "Monitoring & resilience",
+      "items": [
+        {"id": "audit", "title": "Record and review system activity", "detail": "Implement audit controls for systems containing ePHI. Review relevant access and activity, investigate anomalies, protect logs, and avoid unnecessary patient information in telemetry.", "evidence": "Audit configuration and review records"},
+        {"id": "recovery", "title": "Test your contingency arrangements", "detail": "Define backup, disaster recovery, and emergency-mode operations. Test restoration, prioritize critical services, document acceptable recovery objectives, and protect backup copies.", "evidence": "Contingency plan and restore-test results"},
+        {"id": "incidents", "title": "Prepare security incident and breach procedures", "detail": "Assign escalation contacts and investigation responsibilities, preserve evidence, and assess notification duties under applicable rules and agreements. Distinguish security incidents from reportable breaches; confirm applicable deadlines rather than assuming one universal deadline.", "evidence": "Incident playbook, BAA notification terms, and exercise records"},
+        {"id": "lifecycle", "title": "Plan data retention, exit, and disposal", "detail": "Define access to data during outages and contract termination, return or deletion of ePHI, and secure media disposal. Set retention by applicable obligations; HIPAA's documentation retention period is not a universal patient-record retention period.", "evidence": "Retention schedule, exit plan, and disposal records"}
+      ]
+    },
+    {
+      "id": "governance", "title": "People, policies & evidence",
+      "items": [
+        {"id": "ownership", "title": "Assign accountable security leadership", "detail": "Identify the security official and owners for key safeguards. Define workforce authorization, sanctions, and a process for reporting concerns; assign privacy responsibilities as applicable.", "evidence": "Assigned roles and workforce security procedures"},
+        {"id": "training", "title": "Train your workforce", "detail": "Provide security awareness and role-appropriate training, including phishing, safe data handling, credential protection, and incident reporting. Track participation and refresh training when risks or responsibilities change.", "evidence": "Training materials and attendance records"},
+        {"id": "documentation", "title": "Maintain required policies and documentation", "detail": "Keep required Security Rule documentation for six years from creation or the date last in effect, whichever is later. Make it available to responsible staff and update it for material changes; assess other applicable retention obligations separately.", "evidence": "Versioned policies and documentation retention schedule"},
+        {"id": "evaluation", "title": "Reevaluate safeguards and vendor changes", "detail": "Perform periodic technical and nontechnical evaluations and reassess after meaningful environmental or operational changes. Review new services, integrations, and regulatory developments; do not treat proposed rules as current requirements.", "evidence": "Evaluation reports and vendor/change review records"}
+      ]
+    }
+  ],
+  "sources": [
+    {"title": "HHS: Guidance on HIPAA & Cloud Computing", "url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html"},
+    {"title": "HHS: Summary of the HIPAA Security Rule", "url": "https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html"},
+    {"title": "HHS: Breach Notification Rule", "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"}
+  ]
+}
