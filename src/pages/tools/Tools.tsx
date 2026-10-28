@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { ShieldCheck, ArrowRight, BrainCircuit, Cloud, FileText } from "lucide-react";
+import { ShieldCheck, ArrowRight, BrainCircuit, Cloud, FileText, Route } from "lucide-react";
 
 export const tools = [
+  {
+    href: "/tools/code-to-clearance",
+    icon: Route,
+    title: "Code to Clearance",
+    description: "Explore the milestones, decisions, and evidence along your medical device software journey.",
+  },
   {
     href: "/tools/templates",
     icon: FileText,
