@@ -6,3 +6,4 @@
 - Keep the HIPAA cloud checklist content in a shared JSON source for the web tool and prebuilt PDF; regenerate the public download with `scripts/generate-hipaa-checklist.py` when content changes to avoid drift.
 - HIPAA checklist selections are in-memory review tracking, not compliance scoring; serve the blank PDF from `public/downloads` without transmitting visitor answers.
 - Keep template descriptions and outlines in a shared catalog; regenerate editable DOCX/CSV files in `public/downloads/templates` with `scripts/generate-templates.py` when content changes so previews and downloads stay aligned.
+- Keep clearance-roadmap milestones and progress logic in a pure module; review marks track reading in memory only and never represent FDA authorization or completed development.

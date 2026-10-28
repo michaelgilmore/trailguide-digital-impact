@@ -15,6 +15,7 @@ import SafetyClass from "./pages/tools/SafetyClass";
 import AIReadiness from "./pages/tools/AIReadiness";
 import HipaaCloud from "./pages/tools/HipaaCloud";
 import Templates from "./pages/tools/Templates";
+import ClearanceRoadmap from "./pages/tools/ClearanceRoadmap";
 
 const queryClient = new QueryClient();
 
@@ -35,6 +36,7 @@ const App = () => (
           <Route path="/tools/ai-ml-readiness" element={<AIReadiness />} />
           <Route path="/tools/hipaa-cloud-checklist" element={<HipaaCloud />} />
           <Route path="/tools/templates" element={<Templates />} />
+          <Route path="/tools/code-to-clearance" element={<ClearanceRoadmap />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
