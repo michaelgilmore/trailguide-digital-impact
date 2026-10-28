@@ -41,7 +41,7 @@
     }
   ],
   "sources": [
-    {"title": "HHS: Guidance on HIPAA & Cloud Computing", "url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/cloud-computing/index.html"},
+    {"title": "HHS: Guidance on HIPAA & Cloud Computing", "url": "https://www.hhs.gov/hipaa/for-professionals/special-topics/health-information-technology/cloud-computing/index.html"},
     {"title": "HHS: Summary of the HIPAA Security Rule", "url": "https://www.hhs.gov/hipaa/for-professionals/security/laws-regulations/index.html"},
     {"title": "HHS: Breach Notification Rule", "url": "https://www.hhs.gov/hipaa/for-professionals/breach-notification/index.html"}
   ]
