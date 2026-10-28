@@ -1,0 +1,79 @@
+[
+  {
+    "id": "software-development-plan", "title": "Software Development Plan", "category": "Medical device", "format": "DOCX",
+    "description": "Define your software lifecycle, responsibilities, verification approach, and release evidence.",
+    "filename": "trailguide-software-development-plan.docx",
+    "sections": [
+      {"title": "Document control & approvals", "prompt": "Record product, document ID, version, owner, reviewers, approval dates, and change history."},
+      {"title": "Scope & intended use", "prompt": "Describe intended users, patient population, clinical setting, software boundaries, interfaces, and exclusions."},
+      {"title": "Lifecycle & applicable requirements", "prompt": "Identify applicable standards and jurisdictions, proposed software safety class and its risk-based justification, lifecycle activities, and tailoring rationale. Confirm these with qualified reviewers."},
+      {"title": "Roles, resources & milestones", "prompt": "Assign accountable owners, required competencies, tools, supplier oversight, deliverables, and review gates."},
+      {"title": "Development & configuration management", "prompt": "Define requirements, architecture, design, implementation, version control, baselines, third-party software/SOUP evaluation, and change-control practices."},
+      {"title": "Risk management & traceability", "prompt": "Connect hazards, risk controls, requirements, design, verification, and residual-risk decisions. Define how changes trigger reassessment."},
+      {"title": "Verification, validation & release", "prompt": "Specify test levels, acceptance criteria, independence where needed, anomaly disposition, release records, and approval responsibilities."},
+      {"title": "Maintenance & problem resolution", "prompt": "Define issue intake, security updates, impact assessment, maintenance testing, release communication, and end-of-support arrangements."}
+    ]
+  },
+  {
+    "id": "traceability-matrix", "title": "Requirements Traceability Matrix", "category": "Medical device", "format": "CSV",
+    "description": "Link requirements to hazards, design elements, verification evidence, and unresolved gaps.",
+    "filename": "trailguide-requirements-traceability.csv",
+    "columns": ["Requirement ID", "Requirement description", "Source / intended-use need", "Hazard / risk-control ID", "Design element", "Verification test ID", "Acceptance criteria", "Test result", "Evidence reference", "Owner", "Status / gap"],
+    "sections": [
+      {"title": "Requirement identity", "prompt": "Assign stable identifiers and describe each testable requirement and its source."},
+      {"title": "Risk & design links", "prompt": "Reference related hazards, risk controls, and design elements; document rationale where a link is not applicable."},
+      {"title": "Verification evidence", "prompt": "Record test identifiers, measurable acceptance criteria, results, evidence references, and open gaps. Add rows for one-to-many relationships."}
+    ]
+  },
+  {
+    "id": "risk-register", "title": "Software Risk Register", "category": "Medical device", "format": "CSV",
+    "description": "Capture hazardous situations, potential harms, controls, and the evidence behind risk decisions.",
+    "filename": "trailguide-software-risk-register.csv",
+    "columns": ["Risk ID", "Function / use scenario", "Hazard", "Sequence of events", "Hazardous situation", "Potential harm", "Severity (per your method)", "Probability (per your method)", "Initial risk / rationale", "Risk control", "Requirement ID", "Verification evidence", "Residual risk / rationale", "Acceptability decision", "Owner", "Status"],
+    "sections": [
+      {"title": "Hazard analysis", "prompt": "Describe the hazard, foreseeable event sequence, hazardous situation, and possible harm; include normal use, failure, and foreseeable misuse."},
+      {"title": "Risk estimation & controls", "prompt": "Use your approved risk-management method and acceptance criteria. Assign owners and identify controls and linked requirements."},
+      {"title": "Residual risk review", "prompt": "Reference control verification, residual-risk rationale, acceptability decisions, and unresolved actions. This worksheet is not a complete ISO 14971 risk-management file."}
+    ]
+  },
+  {
+    "id": "model-evaluation-plan", "title": "AI Model Evaluation Plan", "category": "AI / ML", "format": "DOCX",
+    "description": "Plan independent evaluation, subgroup analysis, clinical evidence, and acceptance criteria.",
+    "filename": "trailguide-ai-model-evaluation-plan.docx",
+    "sections": [
+      {"title": "Intended use & model baseline", "prompt": "Document intended use, users, target population, clinical workflow, model version, inputs, outputs, and limitations."},
+      {"title": "Evaluation data & leakage controls", "prompt": "Record data provenance, permissions, inclusion/exclusion criteria, reference standards, label quality, and patient/site/time separation from training and tuning sets."},
+      {"title": "Endpoints & acceptance criteria", "prompt": "Prespecify clinically meaningful endpoints, performance metrics, confidence intervals, sample-size rationale, and acceptance thresholds. Avoid selecting criteria after reviewing test results."},
+      {"title": "Subgroups & generalizability", "prompt": "Define relevant patient groups and clinical sites, subgroup sample sizes, uncertainty reporting, and actions for material performance differences."},
+      {"title": "Safety, usability & failure analysis", "prompt": "Evaluate unsafe outputs, uncertainty handling, human oversight, automation bias, fallback behavior, and relevant workflow/usability risks."},
+      {"title": "Execution & evidence review", "prompt": "Assign owners and reviewers, lock model and dataset versions, document deviations, preserve results, and record independent review and go/no-go rationale."},
+      {"title": "Lifecycle handoff", "prompt": "Define deployment monitoring, drift thresholds, incident response, update evaluation, rollback, and change-control responsibilities."}
+    ]
+  },
+  {
+    "id": "cloud-architecture-review", "title": "Cloud Architecture Review", "category": "Cloud & security", "format": "DOCX",
+    "description": "Review sensitive-data flows, shared responsibilities, security controls, and recovery readiness.",
+    "filename": "trailguide-cloud-architecture-review.docx",
+    "sections": [
+      {"title": "System scope & data flows", "prompt": "Identify services, environments, sensitive data including ePHI where applicable, storage locations, integrations, and trust boundaries. Attach a data-flow diagram."},
+      {"title": "Vendor & shared responsibilities", "prompt": "List providers, covered services, applicable agreements including BAAs where required, downstream services, and customer/provider control ownership."},
+      {"title": "Identity & network boundaries", "prompt": "Review unique identities, least privilege, privileged access, strong authentication, network segmentation, public exposure, and secrets management."},
+      {"title": "Data protection & auditability", "prompt": "Review encryption and key management, access/activity logging, integrity controls, retention, backups, and secure disposal; record applicable obligations and evidence."},
+      {"title": "Resilience & incident response", "prompt": "Document recovery objectives, restore-test evidence, failover assumptions, alert ownership, response contacts, and notification responsibilities."},
+      {"title": "Findings & decisions", "prompt": "For each finding record risk, evidence, recommendation, owner, due date, disposition, and follow-up verification. Document accepted risks and approval rationale."}
+    ]
+  },
+  {
+    "id": "technical-discovery-brief", "title": "Technical Discovery Brief", "category": "Planning", "format": "DOCX",
+    "description": "Align your team on the problem, scope, constraints, success measures, and delivery decisions.",
+    "filename": "trailguide-technical-discovery-brief.docx",
+    "sections": [
+      {"title": "Problem & intended outcomes", "prompt": "Describe the user problem, affected stakeholders, current workflow, and measurable outcomes. Separate confirmed facts from assumptions."},
+      {"title": "Scope & boundaries", "prompt": "List in-scope capabilities, exclusions, user groups, integrations, data sources, and dependencies."},
+      {"title": "Constraints & obligations", "prompt": "Capture security, privacy, regulatory, accessibility, performance, reliability, timeline, and budget constraints. Mark items requiring specialist review."},
+      {"title": "Current system & delivery options", "prompt": "Summarize current architecture and team capacity, reusable assets, technical debt, build/buy options, and major trade-offs."},
+      {"title": "Risks & unknowns", "prompt": "Identify critical assumptions, evidence needed, discovery experiments, owners, and decisions that block delivery."},
+      {"title": "Milestones & acceptance", "prompt": "Define proposed milestones, deliverables, acceptance measures, review owners, and the next decision gate."}
+    ]
+  }
+]
