@@ -16,6 +16,7 @@ import AIReadiness from "./pages/tools/AIReadiness";
 import HipaaCloud from "./pages/tools/HipaaCloud";
 import Templates from "./pages/tools/Templates";
 import ClearanceRoadmap from "./pages/tools/ClearanceRoadmap";
+import ProjectEstimator from "./pages/tools/ProjectEstimator";
 
 const queryClient = new QueryClient();
 
@@ -37,6 +38,7 @@ const App = () => (
           <Route path="/tools/hipaa-cloud-checklist" element={<HipaaCloud />} />
           <Route path="/tools/templates" element={<Templates />} />
           <Route path="/tools/code-to-clearance" element={<ClearanceRoadmap />} />
+          <Route path="/tools/project-cost-estimator" element={<ProjectEstimator />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
