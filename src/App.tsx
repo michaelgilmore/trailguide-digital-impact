@@ -12,6 +12,7 @@ import Login from "./pages/Login";
 import NotFound from "./pages/NotFound";
 import Tools from "./pages/tools/Tools";
 import SafetyClass from "./pages/tools/SafetyClass";
+import AIReadiness from "./pages/tools/AIReadiness";
 
 const queryClient = new QueryClient();
 
@@ -29,6 +30,7 @@ const App = () => (
           <Route path="/contact" element={<Contact />} />
           <Route path="/tools" element={<Tools />} />
           <Route path="/tools/iec-62304-safety-class" element={<SafetyClass />} />
+          <Route path="/tools/ai-ml-readiness" element={<AIReadiness />} />
           <Route path="/login" element={<Login />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
