@@ -4,4 +4,4 @@
 - [x] #5 HIPAA cloud checklist (PDF download)
 - [x] #6 Template library
 - [x] #7 "Code to Clearance" roadmap
-- [ ] #12 Project cost estimator
+- [x] #12 Project cost estimator

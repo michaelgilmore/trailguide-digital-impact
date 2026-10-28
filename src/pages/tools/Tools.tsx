@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { ShieldCheck, ArrowRight, BrainCircuit, Cloud, FileText, Route } from "lucide-react";
+import { ShieldCheck, ArrowRight, BrainCircuit, Cloud, FileText, Route, Calculator } from "lucide-react";
 
 export const tools = [
+  {
+    href: "/tools/project-cost-estimator",
+    icon: Calculator,
+    title: "Project Cost Estimator",
+    description: "Explore an engineering budget range using your effort, scope, and hourly-rate assumptions.",
+  },
   {
     href: "/tools/code-to-clearance",
     icon: Route,
