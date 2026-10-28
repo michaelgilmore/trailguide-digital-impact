@@ -1,8 +1,14 @@
 import { Link } from "react-router-dom";
 import { Layout } from "@/components/layout/Layout";
-import { ShieldCheck, ArrowRight } from "lucide-react";
+import { ShieldCheck, ArrowRight, BrainCircuit } from "lucide-react";
 
 export const tools = [
+  {
+    href: "/tools/ai-ml-readiness",
+    icon: BrainCircuit,
+    title: "AI/ML Readiness Check",
+    description: "Assess your healthcare AI project’s readiness and identify your next priorities.",
+  },
   {
     href: "/tools/iec-62304-safety-class",
     icon: ShieldCheck,
