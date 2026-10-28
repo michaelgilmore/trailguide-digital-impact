@@ -22,7 +22,7 @@ export interface EstimateInputs {
 export function calculateProjectEstimate(input: EstimateInputs) {
   if (![input.lowHours, input.highHours, input.hourlyRate, input.contingency].every(Number.isFinite)
     || input.lowHours <= 0 || input.highHours < input.lowHours || input.highHours > 100000
-    || input.hourlyRate <= 0 || input.hourlyRate > 10000 || input.contingency < 0 || input.contingency > 100) {
+    || input.hourlyRate < 0.01 || input.hourlyRate > 10000 || input.contingency < 0 || input.contingency > 100) {
     throw new Error("Enter valid hours, a positive hourly rate, and a contingency from 0 to 100%.");
   }
   const selected = estimateExtras.filter(extra => input.extras.includes(extra.id));
